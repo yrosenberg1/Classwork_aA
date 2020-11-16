@@ -7,7 +7,7 @@ class KnightPathFinder
         possible_moves.each do |move|
             x = move[0] + pos[0]
             y = move[1] + pos[1]
-            if (x > 0 && x < 8) && (y > 0 && y < 8)
+            if (x >= 0 && x < 8) && (y >= 0 && y < 8)
                 valid_moves << [x, y] 
             end
         end
